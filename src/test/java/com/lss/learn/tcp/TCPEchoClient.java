@@ -9,7 +9,7 @@ import java.net.Socket;
  * Created by Sean on 2017/7/12.
  */
 public class TCPEchoClient {
-    public static final String host ="";
+    public static final String host ="127.0.0.1";
     public static final int port = 5555;
     public static final String msg = "hello server";
 
