@@ -8,7 +8,7 @@ import java.net.Socket;
 /**
  * Created by Sean on 2017/7/12.
  */
-public class TCPEchoClient {
+public class TCPEchoClientTwo {
     public static final String host ="127.0.0.1";
     public static final int port = 5555;
     public static final String msg = "hello server";
@@ -17,12 +17,6 @@ public class TCPEchoClient {
         try {
             Socket clientSocket = new Socket(host,port);
             System.out.println("connected to server");
-
-            try {
-                Thread.sleep(20000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
             InputStream is = clientSocket.getInputStream();
             OutputStream os = clientSocket.getOutputStream();

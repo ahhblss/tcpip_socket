@@ -26,6 +26,7 @@ public class TCPEchoServer {
                 OutputStream os = socket.getOutputStream();
                 int byteReceive = 0;
                 do {
+                    //This method blocks until input data is available
                     byteReceive = is.read(data);
                     if (byteReceive !=-1){
                         os.write(data,0,byteReceive);
